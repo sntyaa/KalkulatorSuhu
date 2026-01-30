@@ -41,7 +41,7 @@ function kelv_conv($kelv){
     $f = 9/5 * ($kelv-273.15) + 32;
     $c = $kelv - 273.15;
     $k = $kelv;
-    $r = ($kelv - 273) * 4/5;
+    $r = ($kelv - 273.15) * 4/5;
 }
 
 // CONVERT REAMUR KE SUHU LAIN
@@ -65,6 +65,7 @@ if($dor == "celci"){
 } elseif ($dor == "rea") {
     rea_conv(cek_data('reamur'));
 }
+
 
 
 ?>
